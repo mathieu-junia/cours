@@ -114,7 +114,7 @@ blockquote:after{
 
 
 # What is DevOps ?
-# ![gear](includes/gear.png)
+![gear](includes/gear.png)
 
 ---
 
@@ -137,6 +137,12 @@ blockquote:after{
 **DevOps is neither a profession nor a framework**. It is an approach that has become a philosophy that aims to **break down the silo between the teams in charge of application development, known as Dev, and those in charge of infrastructure, known as Ops**. Hence the name DevOps.
 
 This principle was later extended to the teams in charge of security, the Sec. Hence the name **DevSecOps**.
+
+---
+
+# Sources and Worklabs
+
+* https://github.com/mathieu-junia/cours
 
 ---
 
