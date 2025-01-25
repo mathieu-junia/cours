@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: JuniaGPT
+  version: 1.0.0
+
+tags:
+  - name: helloworld
+
+paths:
+  /helloworld/names/{name}:
+    post:
+      summary: the easiest rest api.
+      description: This endpoint returns a greeting message with the provided name.
+      tags: [helloworld]
+      operationId: postHelloworld
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: The name to personalize the greeting.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hello:
+                    type: string
+                    description: The greeting message.
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  detail:
+                    type: string
+                    description: The error message.
